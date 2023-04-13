@@ -13,4 +13,5 @@ on all support over 15 threads, and using over 15 threads counteracts optimizati
 techiques which actually makes it run slower.**
 
 Code is found in main.rs
+
 https://github.com/tc10815/WordleSolverMultithreaded/blob/main/src/main.rs
