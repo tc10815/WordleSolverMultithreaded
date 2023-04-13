@@ -1,12 +1,3 @@
-// This is a comment, and is ignored by the compiler
-// You can test this code by clicking the "Run" button over there ->
-// or if you prefer to use your keyboard, you can use the "Ctrl + Enter" shortcut
-
-// This code is editable, feel free to hack it!
-// You can always return to the original code by clicking the "Reset" button ->
-
-// This is the mainfa function
-
 use std::fs;
 use std::io;
 use std::thread;
@@ -16,15 +7,10 @@ use std::time::{Instant};
 fn main() -> io::Result<()> {
 
     let answer_words_file = String::from(".\\data\\words_answers.txt");
-    // let all_words_file = String::from(".\\data\\words.txt");   Will uncomment this when time comes
     let answer_words_string =
         fs::read_to_string(answer_words_file).expect("Should have been able to read the file");
-    //     // let all_words_string = fs::read_to_string(all_words_file)
-    //     //      .expect("Should have been able to read the file");
-    //     // let all_words_iter = all_words_string.split("\n");
     let answer_words_iter = answer_words_string.split("\n");
     let answer_words_vec: Vec<&str> = answer_words_iter.collect();
-    //     // let all_words_vec: Vec<&str> = all_words_iter.collect();
     let mut answer_words_arr: [[char; 5]; 2315] = [['7'; 5]; 2315];
     let mut counter: usize = 0;
     for x in answer_words_vec {
@@ -38,8 +24,6 @@ fn main() -> io::Result<()> {
         counter += 1;
     }
     run_game(answer_words_arr);
-    // game_response_test(answer_words_arr);
-
     Ok(())
 }
 fn print_instrunctions(){
@@ -52,9 +36,6 @@ fn print_instrunctions(){
 
 }
 fn run_game(answer_words_arr: [[char; 5]; 2315]) {
-    // [' b e s t s'] //old: coral, new: carol // 542 results
-    // ['=c a r*o l'] //old: conch, new: cinch // 8 results
-    // ['=c i=n c h'] //crashes app, condo ruled out since o in 2 place
     const TOTAL_THREADS:usize = 15;
     let mut keep_looping = true;
     let mut guess_list: Vec<[char; 10]> = Vec::new();
@@ -192,14 +173,6 @@ fn get_best_word(
         last_index = thread_total_size;
     }
     let first_index: usize = (thread_total_size / total_parts) * this_part;
-    // println!(
-    //     "TID {}/{}\tAnswer #{}\tStart-End\t{}\t{}",
-    //     this_part+1,
-    //     total_parts,
-    //     (last_index - first_index),
-    //     first_index,
-    //     last_index
-    // );
     let mut thread_possible_answers: Vec<[char; 5]> = Vec::new();
     for x in first_index..last_index {
         thread_possible_answers.push(possible_answers[x]);
