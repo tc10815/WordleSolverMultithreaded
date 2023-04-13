@@ -2,8 +2,8 @@
 ## Written in Rust with multithreading. 
 
 A Windows program that assists players by analyzing Wordle Puzzles, identifying possible answers and recommending guesses.
-It works by trying out every possible guess with every possible answer, ultimately recommending the guess which leads to the 
-smallest answer pool on average when all possible answer results are averaged together.
+It works by trying out every possible guess with every possible answer scenario, ultimately recommending the guess which leads to the 
+smallest possible answer pool on average, after the result of all possible guesses applied to all answers scenarios are averaged together.
 
 This technique gives good recommendations, but is very processor intense,
 so it is written in Rust with multithreading. 
