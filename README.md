@@ -11,7 +11,8 @@ so it is written in Rust with multithreading.
 **Computes possibilities on 15 threads simulatiously since the computers I use it
 on all support over 15 threads, and using over 15 threads counteracts optimization
 techiques which actually makes it run slower.**
-
+(https://raw.githubusercontent.com/tc10815/WordleSolverMultithreaded/main/wordlesolver_screenshot.png)
 Code is found in main.rs
 
-https://github.com/tc10815/WordleSolverMultithreaded/blob/main/src/main.rs
+![screenshot](https://raw.githubusercontent.com/tc10815/WordleSolverMultithreaded/main/wordlesolver_screenshot.png)
+
