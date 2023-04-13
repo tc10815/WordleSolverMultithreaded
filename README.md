@@ -21,7 +21,7 @@ the correct answer (5 letter words not in valid answer pool), and the best guess
  
 *Instructions: Enter Wordle's response to guess in 10 characters, where before
 each letter you indicate the color of the square, ' ' for blank '*' for yellow,
-and '=' for green (e.g.' t=e*s t s') All remaining possible words will appear.
+and '=' for green (e.g.' t=e\*s t s') All remaining possible words will appear.
 Other options: 'r' gets best possible word. 'c' clears guesses. 'w' generates
 Wordles response to a guess. 'b' removes most recent guess from guess list.
 'q' quits the program*
