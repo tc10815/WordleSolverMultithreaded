@@ -16,3 +16,6 @@ Code is found in main.rs
 
 ![screenshot](https://raw.githubusercontent.com/tc10815/WordleSolverMultithreaded/main/wordlesolver_screenshot.png)
 
+In this screen shot the user has guessed REACH as the first guess and TOILS as the second. R is yellow and O is green.
+This shows all 9 possible answers given that response from Wordle, it shows 3 equally good answers that cannot be 
+the correct answer (5 letter words not in valid answer pool), and the best guess which is in the valid answer pool (gourd).
