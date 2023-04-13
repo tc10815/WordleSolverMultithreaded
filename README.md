@@ -19,3 +19,10 @@ Code is found in main.rs
 In this screen shot the user has guessed REACH as the first guess and TOILS as the second. R is yellow and O is green.
 This shows all 9 possible answers given that response from Wordle, it shows 3 equally good answers that cannot be 
 the correct answer (5 letter words not in valid answer pool), and the best guess which is in the valid answer pool (gourd).
+
+*Instrunctions: Enter Wordle's response to guess in 10 characters, where before
+each letter you indicate the color of the square, ' ' for blank '*' for yellow,
+and '=' for green (e.g.' t=e*s t s') All remaining possible words will appear.
+Other options: 'r' gets best possible word. 'c' clears guesses. 'w' generates
+Wordles response to a guess. 'b' removes most recent guess from guess list.
+'q' quits the program*
