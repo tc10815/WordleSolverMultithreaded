@@ -8,9 +8,9 @@ best world.
 This technique gives good recommendations, but is very processor intense,
 so it is written in Rust with multithreading. 
 
-Computes possibilities on 15 threads simulatiously since the computers I use it
+**Computes possibilities on 15 threads simulatiously since the computers I use it
 on all support over 15 threads, and using over 15 threads counteracts optimization
-techiques which actually makes it run slower.
+techiques which actually makes it run slower.**
 
 Code is found in main.rs
 https://github.com/tc10815/WordleSolverMultithreaded/blob/main/src/main.rs
