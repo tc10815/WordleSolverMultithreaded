@@ -12,7 +12,6 @@ so it is written in Rust with multithreading.
 on all support over 15 threads, and using over 15 threads counteracts optimization
 techiques which actually makes it run slower.**
 (https://raw.githubusercontent.com/tc10815/WordleSolverMultithreaded/main/wordlesolver_screenshot.png)
-Code is found in main.rs
 
 ![screenshot](https://raw.githubusercontent.com/tc10815/WordleSolverMultithreaded/main/wordlesolver_screenshot.png)
 
@@ -26,3 +25,7 @@ and '=' for green (e.g.' t=e*s t s') All remaining possible words will appear.
 Other options: 'r' gets best possible word. 'c' clears guesses. 'w' generates
 Wordles response to a guess. 'b' removes most recent guess from guess list.
 'q' quits the program*
+
+
+Code for program is found in main.rs here:
+[https://github.com/tc10815/WordleSolverMultithreaded/blob/main/src/main.rs](https://github.com/tc10815/WordleSolverMultithreaded/blob/main/src/main.rs)
