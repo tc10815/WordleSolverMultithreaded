@@ -16,8 +16,8 @@ techiques which actually makes it run slower.**
 ![screenshot](https://raw.githubusercontent.com/tc10815/WordleSolverMultithreaded/main/wordlesolver_screenshot.png)
 
 In this screen shot the user has guessed REACH as the first guess and TOILS as the second. R is yellow and O is green.
-This shows all 9 possible answers given that response from Wordle, it shows 3 equally good answers that cannot be 
-the correct answer (5 letter words not in valid answer pool), and the best guess which is in the valid answer pool (gourd). 
+This shows all 9 possible answers given that response from Wordle, it shows 3 equally good responses that cannot be 
+the correct answer (that is, will shrink the remaining answer pool the most on average, but cannot possibly be the correct answer), and the best guess which is in the valid answer pool (gourd). 
  
 *Instructions: Enter Wordle's response to guess in 10 characters, where before
 each letter you indicate the color of the square, ' ' for blank '*' for yellow,
