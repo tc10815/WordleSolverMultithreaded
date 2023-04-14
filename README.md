@@ -1,7 +1,7 @@
 # WordleHelper
 ## Written in Rust with multithreading. 
 
-A program that assists players by analyzing Wordle Puzzles, identifying possible answers and recommending guesses. A binary is compiled here for Windows, but naturally this source code can be compiled for any operating system.
+A program that assists players by analyzing Wordle Puzzles, identifying possible answers and recommending guesses. A binary is compiled here for Windows, but naturally this source code can be compiled for any operating system (see bottom of README for Linux instructions).
 It works by trying out every possible guess with every possible answer scenario, ultimately recommending the guess which leads to the 
 smallest possible answer pool on average, after the result of all possible guesses applied to all answers scenarios are averaged together.
 
@@ -31,3 +31,6 @@ Code for program is found in main.rs here:
 [https://github.com/tc10815/WordleSolverMultithreaded/blob/main/src/main.rs](https://github.com/tc10815/WordleSolverMultithreaded/blob/main/src/main.rs)
 
 Executable windows binaries are found in "compiled" (must have data folder in same directory as binary). This source code can be compiled on other operating systems.
+
+**To compile successfully on Linux (and most likely Mac OS although I haven't tested it) change line 9 of main.rs to:**
+**    let answer_words_file = String::from("./data/words_answers.txt"); **
