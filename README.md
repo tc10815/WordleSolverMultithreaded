@@ -33,6 +33,7 @@ Code for program is found in main.rs here:
 Executable windows binaries are found in "compiled" (must have data folder in same directory as binary). This source code can be compiled on other operating systems.
 
 **To compile successfully on Linux (and most likely Mac OS although I haven't tested it) change line 9 of main.rs to:**
-**    let answer_words_file = String::from("./data/words_answers.txt"); **
+
+    **let answer_words_file = String::from("./data/words_answers.txt");**
 
 It is compiled with "cargo build", executed in the home directory of the project.
