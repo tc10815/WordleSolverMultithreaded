@@ -1,4 +1,4 @@
-# WordleHelper
+# Wordle Solver
 ## Written in Rust with multithreading. 
 
 A program that assists players by analyzing Wordle Puzzles, identifying possible answers and recommending guesses. A binary is compiled here for Windows, but naturally this source code can be compiled for any operating system (see bottom of README for Linux instructions).
