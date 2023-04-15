@@ -8,9 +8,9 @@ smallest possible answer pool on average, after the result of all possible guess
 This technique gives good recommendations, but is very processor intensive,
 so it is written in Rust with multithreading. 
 
-**Computes possibilities on 15 threads simulatiously since the computers I use it
+**This solver computes possibilities on 15 threads simulatiously since the computers I use it
 on all support over 15 threads, and using over 15 threads counteracts optimization
-techiques which actually makes it run slower.**
+techiques in such a way that it runs slower.**
 (https://raw.githubusercontent.com/tc10815/WordleSolverMultithreaded/main/wordlesolver_screenshot.png)
 
 ![screenshot](https://raw.githubusercontent.com/tc10815/WordleSolverMultithreaded/main/wordlesolver_screenshot.png)
